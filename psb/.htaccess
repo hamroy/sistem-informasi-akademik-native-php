@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule ^index\.mu$ index.php?view=home
+RewriteRule ^halaman-(.*)\.mu$ index.php?view=halaman&seo=$1 [L]
+RewriteRule ^sma-dek-(.*)\.mu$ index.php?view=pendaftaran&kode=$1 [L]
+RewriteRule ^smk-dek-(.*)\.mu$ index.php?view=pendaftaran&kode=$1 [L]
+RewriteRule ^smp-dek-(.*)\.mu$ index.php?view=pendaftaran&kode=$1 [L]
+RewriteRule ^pendaftaran-sukses\.mu$ index.php?view=sukses
